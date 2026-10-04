@@ -20,24 +20,32 @@
             <h3>👕 T-Shirt</h3>
             <p>Comfortable cotton T-Shirt</p>
             <h3>₹499</h3>
-            <button>Add to Cart</button>
+            <button onclick="addToCart('T-Shirt', 499)">
+                Add to Cart
+            </button>
         </div>
 
         <div class="product">
             <h3>👟 Shoes</h3>
             <p>Stylish casual shoes</p>
             <h3>₹999</h3>
-            <button>Add to Cart</button>
+            <button onclick="addToCart('Shoes', 999)">
+                Add to Cart
+            </button>
         </div>
 
         <div class="product">
             <h3>🎧 Headphones</h3>
             <p>Wireless headphones</p>
             <h3>₹799</h3>
-            <button>Add to Cart</button>
+            <button onclick="addToCart('Headphones', 799)">
+                Add to Cart
+            </button>
         </div>
 
     </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
