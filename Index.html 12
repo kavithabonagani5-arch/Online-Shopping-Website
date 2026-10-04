@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping</title>
+</head>
+<body>
+
+    <h1>🛒 Welcome to Online Shopping</h1>
+
+    <h2>Our Products</h2>
+
+    <p>👕 T-Shirt - ₹499</p>
+    <p>👟 Shoes - ₹999</p>
+    <p>🎧 Headphones - ₹799</p>
+
+    <button>Add to Cart</button>
+
+</body>
+</html>
