@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f2f2f2;
+    text-align: center;
+}
+
+header {
+    background: #222;
+    color: white;
+    padding: 25px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+h2 {
+    margin: 25px 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.product {
+    background: white;
+    width: 220px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px #aaa;
+}
+
+.product h3 {
+    margin: 10px;
+}
+
+button {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+}
+
+input,
+textarea,
+select {
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
