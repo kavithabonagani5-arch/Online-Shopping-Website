@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Checkout - Online Shopping</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>💳 Checkout</h1>
+        <p>Complete your order</p>
+    </header>
+
+    <div class="product">
+
+        <h2>Delivery Details</h2>
+
+        <form onsubmit="placeOrder(event)">
+
+            <input type="text" placeholder="Full Name" required>
+            <br><br>
+
+            <input type="text" placeholder="Phone Number" required>
+            <br><br>
+
+            <textarea placeholder="Delivery Address" required></textarea>
+            <br><br>
+
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option>Cash on Delivery</option>
+                <option>UPI</option>
+                <option>Card</option>
+            </select>
+
+            <br><br>
+
+            <button type="submit">Place Order</button>
+
+        </form>
+
+    </div>
+
+    <p>
+        <a href="/cart">← Back to Cart</a>
+    </p>
+
+    <script>
+    function placeOrder(event) {
+        event.preventDefault();
+
+        alert("🎉 Order placed successfully!");
+
+        localStorage.removeItem("cart");
+
+        window.location.href = "/";
+    }
+    </script>
+
+</body>
+</html>
