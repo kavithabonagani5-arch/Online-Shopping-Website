@@ -14,6 +14,8 @@
 
     <h2>Our Products</h2>
 
+<a href="cart.html">🛒 View Cart</a>
+
     <div class="products">
 
         <div class="product">
