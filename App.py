@@ -1,27 +1,32 @@
-from flask import Flask
-import sqlite3
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
-def create_database():
-    conn = sqlite3.connect("database.db")
-    cursor = conn.cursor()
-
-    cursor.execute("""
-        CREATE TABLE IF NOT EXISTS products (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            name TEXT NOT NULL,
-            price INTEGER NOT NULL
-        )
-    """)
-
-    conn.commit()
-    conn.close()
 
 @app.route("/")
 def home():
-    return "Online Shopping Website"
+    return render_template("index.html")
+
+
+@app.route("/cart")
+def cart():
+    return render_template("cart.html")
+
+
+@app.route("/login")
+def login():
+    return render_template("login.html")
+
+
+@app.route("/register")
+def register():
+    return render_template("register.html")
+
+
+@app.route("/checkout")
+def checkout():
+    return render_template("checkout.html")
+
 
 if __name__ == "__main__":
-    create_database()
     app.run(debug=True)
