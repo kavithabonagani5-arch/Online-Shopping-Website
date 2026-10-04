@@ -1,10 +1,33 @@
-from flask import Flask
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Shopping</title>
+</head>
+<body>
 
-app = Flask(__name__)
+    <h1>🛒 Online Shopping</h1>
 
-@app.route("/")
-def home():
-    return "Welcome to Online Shopping Website!"
+    <p>Welcome to our online shopping website!</p>
 
-if __name__ == "__main__":
-    app.run(debug=True)
+    <h2>Products</h2>
+
+    <div>
+        <h3>👕 T-Shirt</h3>
+        <p>Price: ₹499</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div>
+        <h3>👟 Shoes</h3>
+        <p>Price: ₹999</p>
+        <button>Add to Cart</button>
+    </div>
+
+    <div>
+        <h3>🎧 Headphones</h3>
+        <p>Price: ₹799</p>
+        <button>Add to Cart</button>
+    </div>
+
+</body>
+</html>
